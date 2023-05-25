@@ -1,0 +1,419 @@
+body, head{
+    font-family: 'Caveat', cursive;
+    margin: auto;
+    background-color: #f3f5fc;
+}
+
+.main{
+    min-height: 80%;
+    margin: auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: #f3f5fc;
+}
+
+.coder{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 80% 10% 10%;
+}
+
+.logo{
+    padding-top: 1.5em;
+}
+
+.coder-window{
+    margin: 0em auto;
+    width: 80%;
+    display: block;
+}
+
+#content{
+    padding: 5%;
+    margin: 0 auto;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 1.5em;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border-color: #f3f5fc;
+}
+
+#content:hover{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px #dadada;
+    border-width: 0;
+    transition: 100ms;
+}
+
+#content:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px #dadada;
+    background-color: #ffffff;
+    border-width: 0;
+}
+
+#content::placeholder{
+    color: #000000;
+}
+
+.warning{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 0.8em;
+    color: #495057;
+    height: 100%;
+    display: inline-block;
+}
+
+.fa-circle-exclamation{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+}
+
+.warning p{
+    font-size: 1em;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    padding-left: 1.5em;
+    cursor: default;
+}
+
+.buttons{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 90%;
+}
+
+.buttons .code{
+    margin-right: 0.5em;
+    border-radius: 10px;
+    background-color: darkblue;
+    color: #FFFFFF;
+    border: none;
+    font-family: inherit;
+    height: 80%;
+    cursor: pointer;
+    transition: 500ms;
+    font-size: 1em;
+}
+
+.code:hover{
+    background-color: rgb(0, 0, 115);
+}
+
+.buttons .decode{
+    margin-left: 0.5em;
+    border-radius: 10px;
+    background-color: #d8dfe8;
+    color: darkblue;
+    border-color: darkblue;
+    border: solid 0.05em;
+    font-family: inherit;
+    height: 80%;
+    cursor: pointer;
+    transition: 500ms;
+    font-size: 1em;
+}
+
+.decode:hover{
+    background-color: #bdc3ca;
+}
+
+.result{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100% 0%;
+}
+
+.result-window{
+    box-shadow: 0px 0px 10px #dadada;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0em auto;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+.muneco{
+    display: block;
+    width: 90%;
+}
+
+.empty{
+    display: block;
+    font-weight: bold;
+    width: 80%;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.notext{
+    display: block;
+    width: 80%;
+    font-size: 1em;
+    padding: 10px;
+    cursor: default;
+}
+
+.output{
+    display: none;
+    width: 90%;
+    height: 81%;
+    padding: 5%;
+    margin: 0 auto;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 1em;
+    resize: none;
+    border-radius: 20px;
+    border-color: #FFFFFF;
+}
+
+#output:hover{
+    background-color: #ffffff;
+    border-width: 0;
+}
+
+#output:focus{
+    outline: none;
+    background-color: #ffffff;
+    border-width: 0;
+}
+
+.copy{
+    display: none;
+    margin-top: 12%;
+    border-radius: 10px;
+    background-color: #d8dfe8;
+    color: darkblue;
+    border-color: darkblue;
+    border: solid 0.05em;
+    font-family: inherit;
+    height: 7%;
+    width: 85%;
+    cursor: pointer;
+    transition: 500ms;
+    font-size: 1em;
+}
+
+.copy:hover{
+    background-color: #bdc3ca;
+}
+
+.copyright{
+    padding-top: 10px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: x-small;
+}
+
+@media screen and (max-width:769px){
+ 
+    body, head{
+        font-family: 'Caveat', cursive;
+        margin: auto;
+        background-color: #f3f5fc;
+        max-height: 1174px;
+    }
+
+    .main{
+        min-height: 80%;
+        margin: auto;
+        max-height: 100%;
+        display: block;
+        background-color: #f3f5fc;
+    }
+
+    .coder{
+        width: 90%;
+        height: 60%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 80% 10% 10%;
+    }
+
+    .result{
+        margin: 0 auto;
+        width: 75%;
+        height: 30%;
+        display: grid;
+        grid-template-rows: 100% 0%;
+    }
+
+    .muneco{
+        display: none;
+        width: 90%;
+    }
+
+    .output{
+        display: none;
+        width: 90%;
+        height: 60%;
+        padding: 0 5%;
+        margin: 0 auto;
+        background-color: inherit;
+        font-family: inherit;
+        font-size: 1em;
+        resize: none;
+        border-radius: 20px;
+        border-color: #FFFFFF;
+    }
+
+    .copy{
+        display: none;
+        margin-top: 3%;
+        margin-bottom: 0%;
+        border-radius: 10px;
+        background-color: #d8dfe8;
+        color: darkblue;
+        border-color: darkblue;
+        border: solid 0.05em;
+        font-family: inherit;
+        height: 15%;
+        width: 85%;
+        cursor: pointer;
+        transition: 500ms;
+        font-size: 1em;
+    }
+
+    .copyright{
+        padding-top: 10px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width:376px){
+ 
+    body, head{
+        font-family: 'Caveat', cursive;
+        margin: auto;
+        background-color: #f3f5fc;
+        max-height: 933px;
+    }
+
+    .main{
+        min-height: 80%;
+        margin: auto;
+        max-height: 100%;
+        display: block;
+        background-color: #f3f5fc;
+    }
+
+    .coder{
+        width: 90%;
+        height: 50%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 60% 10% 25%;
+    }
+
+    .buttons{
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        height: 80%;
+    }
+
+    .buttons .code{
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 10px;
+        background-color: darkblue;
+        color: #FFFFFF;
+        border: none;
+        font-family: inherit;
+        height: 50%;
+        cursor: pointer;
+        transition: 500ms;
+        font-size: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .buttons .decode{
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #d8dfe8;
+        color: darkblue;
+        border-color: darkblue;
+        border: solid 0.05em;
+        font-family: inherit;
+        height: 50%;
+        cursor: pointer;
+        transition: 500ms;
+        font-size: 1em;
+        margin-top: 0.5em;
+    }
+
+    .result{
+        margin: 0 auto;
+        width: 75%;
+        height: 30%;
+        display: grid;
+        grid-template-rows: 100% 0%;
+    }
+
+    .muneco{
+        display: none;
+        width: 90%;
+    }
+
+    .output{
+        display: none;
+        width: 90%;
+        height: 60%;
+        padding: 0 5%;
+        margin: 0 auto;
+        background-color: inherit;
+        font-family: inherit;
+        font-size: 1em;
+        resize: none;
+        border-radius: 20px;
+        border-color: #FFFFFF;
+    }
+
+    .copy{
+        display: none;
+        margin-top: 3%;
+        margin-bottom: 0%;
+        border-radius: 10px;
+        background-color: #d8dfe8;
+        color: darkblue;
+        border-color: darkblue;
+        border: solid 0.05em;
+        font-family: inherit;
+        height: 15%;
+        width: 85%;
+        cursor: pointer;
+        transition: 500ms;
+        font-size: 1em;
+    }
+
+    .copyright{
+        padding-top: 10px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: x-small;
+    }
+}

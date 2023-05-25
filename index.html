@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Codificador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">        
+    </head>
+    <body>
+        <div class="logo">
+            <img src="images/Logo.png">
+        </div>
+        <main class="main">
+            <div class="coder">
+                <div class="coder-window">
+                    <textarea id="content" class="content" placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+                <div class="warning">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="buttons">
+                    <button class="code" id="code">Encriptar</button>
+                    <button class="decode" id="decode">Desencriptar</button>
+                </div>
+            </div>
+            <div class="result">
+                <div class="result-window" id="result-window">
+                    <img class="muneco" id="muneco" src="images/Muñeco.png">
+                    <p class="empty" id="empty">Ningún mensaje fue encontrado</p>
+                    <p class="notext" id="notext">Aqui veras el mensaje despues de encriptar o desencriptar</p>
+                    <textarea id="output" class="output" readonly></textarea>
+                    <button class="copy" id="copy">Copiar</button>
+                </div>
+            </div>
+        </main>
+        <footer class="copyright">
+            <p>&copy Created by Bernardo Trujillo (2023)</p>
+        </footer>
+    </body>
+    <script src="https://kit.fontawesome.com/91d85dd085.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</html>
